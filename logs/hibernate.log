@@ -1,0 +1,15 @@
+2025-07-04 21:55:25 INFO  [Version] HHH000412: Hibernate ORM core version 7.0.4.Final
+2025-07-04 21:55:25 INFO  [Environment] HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=false, hibernate.connection.url=jdbc:postgresql://localhost:5432/testdb, hibernate.hbm2ddl.auto=update, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, hibernate.show_sql=false, hibernate.connection.password=****, hibernate.connection.username=postgres}
+2025-07-04 21:55:26 WARN  [pooling] HHH10001002: Using built-in connection pool (not intended for production use)
+2025-07-04 21:55:26 WARN  [deprecation] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-04 21:55:26 INFO  [pooling] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/testdb]
+	Database driver: org.postgresql.Driver
+	Database version: 15.3
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Pool: DriverManagerConnectionProviderImpl
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-07-04 21:55:27 INFO  [JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-04 21:55:27 INFO  [access] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@20801cbb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
