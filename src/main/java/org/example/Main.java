@@ -72,7 +72,7 @@ public class Main {
                     System.out.print("Введите ID для удаления: ");
                     int id = Integer.parseInt(scanner.nextLine());
                     userDao.deleteUser(id);
-                    System.out.println("Пользователь удалён (если существовал)");
+                    System.out.println("Пользователь удалён");
                 }
                 case "0" -> {
                     HibernateUtil.shutdown();
