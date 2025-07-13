@@ -26,7 +26,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public Optional<User> getUserById(int id) {
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            return Optional.ofNullable(session.get(User.class, id));
+            return Optional.ofNullable(session.find(User.class, id));
         }
     }
 
@@ -54,7 +54,7 @@ public class UserDaoImpl implements UserDao {
     public void deleteUser(int id) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            User user = session.get(User.class, id);
+            User user = session.find(User.class, id);
             if (user != null) {
                 transaction = session.beginTransaction();
                 session.remove(user);
