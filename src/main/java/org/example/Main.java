@@ -1,6 +1,8 @@
 package org.example;
 
 
+import org.example.dao.UserDao;
+import org.example.dao.UserDaoImpl;
 import org.example.entity.User;
 import org.example.service.UserService;
 import org.example.service.UserServiceImpl;
@@ -10,7 +12,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        UserService userService = new UserServiceImpl();
+        UserDao userDao = new UserDaoImpl();
+        UserService userService = new UserServiceImpl(userDao);
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
